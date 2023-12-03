@@ -19,4 +19,18 @@ public class PlayerInteract : MonoBehaviour
             }
         }
     }
+
+    public ObjectInteract GetInteractableObject()
+    {
+        float interactRanges = 10f;
+        Collider[] colliderArrays = Physics.OverlapSphere(transform.position, interactRanges);
+        foreach (Collider collider in colliderArrays)
+        {
+            if (collider.TryGetComponent(out ObjectInteract objectInteractable))
+            {
+                return objectInteractable;
+            }
+        }
+        return null;
+    }
 }
