@@ -21,4 +21,9 @@ public class QuizManager : MonoBehaviour
         });
     }
 
+    public void NextQuestion()
+    {
+        gameObject.SetActive(true);
+    }
+
 }
