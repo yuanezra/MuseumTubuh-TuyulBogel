@@ -907,6 +907,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Lantai1
+  containerGameObject: {fileID: 0}
+  playerInteract: {fileID: 0}
 --- !u!114 &563064629
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -920,6 +922,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Lantai1
+  containerGameObject: {fileID: 0}
+  playerInteract: {fileID: 0}
 --- !u!1 &648517729
 GameObject:
   m_ObjectHideFlags: 0
@@ -1185,7 +1189,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.50980395, g: 0.27058825, b: 0.26666668, a: 1}
+  m_BackGroundColor: {r: 0.8679245, g: 0.66975087, b: 0.6009968, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0

@@ -2,20 +2,28 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class PlayerMovement : MonoBehaviour
 {
-    public CharacterController controller;
+    float moveForward;
+    float moveSide;
+    public float speed = 5f;
+    Rigidbody rb;
 
-    [SerializeField] private float speed = 12f;
+
+    void Start()
+    {
+        rb = GetComponent<Rigidbody>();
+    }
 
     // Update is called once per frame
     void Update()
     {
-        float x = Input.GetAxis("Horizontal");
-        float z = Input.GetAxis("Vertical");
+        moveForward = Input.GetAxis("Vertical") * speed;
+        moveSide = Input.GetAxis("Horizontal") * speed;
 
-        Vector3 move = transform.right * x + transform.forward * z;
+        rb.velocity = (transform.forward * moveForward) + (transform.right * moveSide) + (transform.up * rb.velocity.y);
 
-        controller.Move(move * speed * Time.deltaTime);
     }
+
 }

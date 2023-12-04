@@ -198,9 +198,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8529934209603809724}
   - component: {fileID: 8529934209603809725}
-  - component: {fileID: 8529934209603809726}
+  - component: {fileID: 8184274967386426470}
   - component: {fileID: 2139518266648948295}
-  - component: {fileID: 8529934209603809727}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -241,7 +240,7 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 80
   m_CollisionDetection: 1
---- !u!114 &8529934209603809726
+--- !u!114 &8184274967386426470
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -250,10 +249,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 8529934209603809723}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 88135b6cc8d26484db1337f7d94e0cd9, type: 3}
+  m_Script: {fileID: 11500000, guid: 89f25171e3569634ab577fe257439fce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controller: {fileID: 8529934209603809727}
   speed: 12
 --- !u!114 &2139518266648948295
 MonoBehaviour:
@@ -267,21 +265,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf6d238b5891984438c4f9367b4b7d77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!143 &8529934209603809727
-CharacterController:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8529934209603809723}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Height: 2
-  m_Radius: 0.5
-  m_SlopeLimit: 45
-  m_StepOffset: 0.3
-  m_SkinWidth: 0.08
-  m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0, z: 0}
+  interactableLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  interactRanges: 10
